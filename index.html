@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html class="no-js">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,17 +33,62 @@
 
 	</head>
 	<body>
-			<!-- Navigation -->
-	<nav class="site-navigation">
-		<div class="site-navigation-inner site-container">
-			<img src="./images/site-logo.png" alt="site logo">
+		
+		<!-- Navigation 
+			<nav class="site-navigation">
+				<div class="site-navigation-inner site-container">
+					<img src="./images/site-logo.png" alt="site logo">
+					
+				</div>
+			</nav>
+		-->
+		<!-- Navigation end -->
+		<!-- preloader
+			================================================== -->
+			<div id="preloader">
+				<div id="loader" class="dots-fade">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
 
-		</div>
-	</nav>
-	<!-- Navigation end -->
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="s-header__logo">
+            <a href="index.html">
+                <img src="images/site-logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="s-header__content">
+    
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li><a class="smoothscroll" href="#fh5co-top-banner" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#fh5co-about-me" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#fh5co-resume" title="Services">Resume</a></li>
+                    <li><a class="smoothscroll" href="#fh5co-skills" title="Works">Skills</a></li>
+                </ul>
+            </nav> <!-- end s-header__nav-wrap -->
+
+            <a href="mailto:#0" class="btn btn--primary btn--small">
+               
+                Contact Me
+            </a>
+
+        </div> <!-- end header-content -->
+
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
 
 	<!-- Top banner -->
-	<section class="fh5co-top-banner">
+	<section class="fh5co-top-banner" id="fh5co-top-banner">
 		<div class="top-banner__inner site-container" >
 			<div class="top-banner__image">
 				<img src="./images/top-banner-author.jpg" alt="author image">
@@ -68,16 +113,18 @@
 
 						
 					 </ul>
-					
+					 
 				</div>
 				
 			</div>
+			
 		</div>
+		
 	</section>
 	<!-- Top banner end -->
-
+	
 	<!-- About me -->
-	<section class="fh5co-about-me" >
+	<section class="fh5co-about-me" id="fh5co-about-me" >
 		<div class="about-me-inner site-container" >
 			<article class="portfolio-wrapper" >
 				<div class="portfolio__img">
@@ -220,38 +267,7 @@
 
 	<div id="fh5co-skills" class="animate-box">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Ruby</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
-				</div>
-			</div>
+		
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Skills</h2>
