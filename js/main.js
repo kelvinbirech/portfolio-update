@@ -41,7 +41,8 @@
 		}
 	};
 	
-
+	var vid = document.getElementById("myVideo");
+	vid.playbackRate = 0.7;
 
  /* preloader
     * -------------------------------------------------- */
@@ -66,8 +67,6 @@
 
 	});
 };
-
-
 
 
 /* move header
@@ -231,6 +230,7 @@ const ssMobileMenu = function() {
         
         ssMoveHeader();
         ssMobileMenu();
+	
 	
 	});
 

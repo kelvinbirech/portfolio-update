@@ -13,10 +13,24 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
-  color: rgb(15, 15, 15);
-  background: #f5f5f5;
+  
+  /*background: #f5f5f5;*/
+  
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -422,7 +436,7 @@ body {
 }
 
 .s-header.sticky {
-  background-color: #777;
+  background-color: #343434;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -969,9 +983,7 @@ input::-moz-focus-inner {
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/top-banner-bckg.jpg");
-  background-position: center;
-  background-size: cover; }
+   }
   .fh5co-top-banner::after {
     content: '';
     position: absolute;
@@ -979,8 +991,7 @@ input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: 0.4; }
+     }
   .fh5co-top-banner .site-container {
     position: relative;
     z-index: 1;
@@ -991,9 +1002,8 @@ input::-moz-focus-inner {
   @media (max-width: 1250px) {
     .fh5co-top-banner {
       padding-top: 130px; } }
-  @media (max-width: 520px) {
-    .fh5co-top-banner {
-      padding-top: 105px; } }
+
+
   @media (min-width: 1600px) {
     .fh5co-top-banner {
       min-height: 100vh; } }
@@ -1002,7 +1012,7 @@ input::-moz-focus-inner {
   display: flex;
   align-items: center; }
   .top-banner__inner .top-banner__text {
-    margin-left: 54px; }
+    margin-left: 94px; }
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__text {
         width: 35%; } }
@@ -1017,7 +1027,9 @@ input::-moz-focus-inner {
         margin-left: 0; } }
     .top-banner__inner .top-banner__text p {
       margin-bottom: 42px;
-      color: #f5f5f5; }
+      color: #c18f59;
+    padding-left: 70px; }
+      
       @media (max-width: 768px) {
         .top-banner__inner .top-banner__text p {
           margin-bottom: 25px;
@@ -1025,7 +1037,7 @@ input::-moz-focus-inner {
   .top-banner__inner .top-banner__h2 {
     font-size: 74px;
     letter-spacing: 3px;
-    color: #fff;
+    color: #c18f59;
     font-family: "Calisto-MT-Bold"; }
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__h2 {
@@ -1064,8 +1076,15 @@ input::-moz-focus-inner {
 
       .brand-span {
         font-size: 18px;
-        color: #c18f59;
+        color: #ffffff;
       font-weight: 1000; }
+      @media (max-width: 768px){
+        .brand-span
+        {
+
+          color: black;
+        }
+        } 
       
       .brand-button {
         display: inline-block;
@@ -1088,6 +1107,7 @@ input::-moz-focus-inner {
             left: 0;
             bottom: 7.2rem;
             font-size: 3.3rem;
+            padding-left: 50px;
             
              }
           
@@ -1117,7 +1137,7 @@ input::-moz-focus-inner {
             .intro-social li {
               margin: 0 15px;
               display: inline-block;
-              margin: 100px 1px;
+           
               padding: 3px 8px;
               margin-left: auto;
             }
@@ -1170,7 +1190,7 @@ input::-moz-focus-inner {
             .intro-social {
               font-size: 2.4rem;
               display: inline-block;
-              margin: 100px 1px;
+            
               padding: 3px 1px;
               margin-left: auto;
             }
@@ -1192,9 +1212,7 @@ input::-moz-focus-inner {
 
 .about-me-bckg {
   position: absolute;
-  background-image: url("../images/about-me-bckg.jpg");
-  background-position: center;
-  background-size: cover;
+ 
   height: 500px;
   top: -75px;
   right: 0;
@@ -1209,11 +1227,12 @@ input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: 0.9; }
+    opacity: 0.8;
+    }
   @media (max-width: 992px) {
     .about-me-bckg {
       width: 100%;
-      padding-bottom: 15px; } }
+      padding-bottom: 5px; } }
 
       .about-me-inner {
         display: flex;
@@ -1340,10 +1359,11 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
+  color: #c18f59;
   font-family: "Calisto MT";
   font-weight: 400;
   margin: 0 0 20px 0;
+  font-size: 50px;
 }
 
 ::-webkit-selection {
@@ -1368,8 +1388,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-resume,
 #fh5co-skills
  {
-  padding: 7em 0;
+  padding: 20px 0;
   clear: both;
+  
 }
 @media screen and (max-width: 768px) {
   
@@ -1387,6 +1408,8 @@ h1, h2, h3, h4, h5, h6, figure {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
+  color: white;
+  font-size: large;
 }
 .timeline:before {
   top: 20px;
@@ -1398,6 +1421,14 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 50%;
   margin-left: 0px;
 }
+@media (max-width: 768px){
+  .timeline
+  {
+
+    color: rgb(0, 0, 0);
+  }
+  } 
+
 @media screen and (max-width: 768px) {
   .timeline:before {
     margin-left: -64px;
@@ -1537,6 +1568,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .timeline-title {
   margin-top: 0;
+  font-size: 35px;
+  color: #c18f59;
 }
 
 .company {
